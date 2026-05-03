@@ -46,3 +46,24 @@ if(MSVC)
             $<TARGET_FILE_DIR:projectM-Test-UI>
             )
 endif()
+
+# Install the SDL test UI executable and runtime dependencies
+install(TARGETS projectM-Test-UI
+        RUNTIME DESTINATION "${PROJECTM_BIN_DIR}"
+        COMPONENT Runtime
+        )
+
+# Install SDL2 DLL alongside the executable on Windows
+if(CMAKE_SYSTEM_NAME STREQUAL Windows)
+    install(FILES $<TARGET_FILE:SDL2::SDL2>
+            DESTINATION "${PROJECTM_BIN_DIR}"
+            COMPONENT Runtime
+            )
+endif()
+
+# Install bundled presets
+install(DIRECTORY "${PROJECTM_SOURCE_DIR}/presets/"
+        DESTINATION "${PROJECTM_BIN_DIR}/presets"
+        COMPONENT Runtime
+        FILES_MATCHING PATTERN "*.milk" PATTERN "*.prjm"
+        )

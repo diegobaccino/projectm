@@ -29,6 +29,7 @@
 #include <Audio/PCM.hpp>
 
 #include <Renderer/CopyTexture.hpp>
+#include <Renderer/LogoOverlay.hpp>
 #include <Renderer/PresetTransition.hpp>
 #include <Renderer/ShaderCache.hpp>
 #include <Renderer/TextureManager.hpp>
@@ -215,6 +216,12 @@ void ProjectM::RenderFrame(uint32_t targetFramebufferObject /*= 0*/)
     // Draw user sprites
     m_spriteManager->Draw(audioData, renderContext, targetFramebufferObject, {m_activePreset, m_transitioningPreset});
 
+    // Draw logo overlay (always last, on top of everything)
+    glBindFramebuffer(GL_DRAW_FRAMEBUFFER, static_cast<GLuint>(targetFramebufferObject));
+    glViewport(0, 0, renderContext.viewportSizeX, renderContext.viewportSizeY);
+    float deltaTime = static_cast<float>(m_timeKeeper->SecondsSinceLastFrame());
+    m_logoOverlay->Draw(audioData, *m_shaderCache, renderContext.viewportSizeX, renderContext.viewportSizeY, deltaTime);
+
     m_frameCount++;
     m_previousFrameVolume = audioData.vol;
 }
@@ -237,6 +244,8 @@ void ProjectM::Initialize()
     m_textureCopier = std::make_unique<Renderer::CopyTexture>();
 
     m_spriteManager = std::make_unique<UserSprites::SpriteManager>();
+
+    m_logoOverlay = std::make_unique<Renderer::LogoOverlay>();
 
     m_presetFactoryManager->initialize();
 
@@ -571,6 +580,93 @@ void ProjectM::TouchDestroy(float, float)
 void ProjectM::TouchDestroyAll()
 {
     // UNIMPLEMENTED
+}
+
+// ---- Logo Overlay Methods ----
+
+bool ProjectM::LogoOverlayLoadImage(const std::string& filePath)
+{
+    return m_logoOverlay->LoadImage(filePath);
+}
+
+bool ProjectM::LogoOverlayLoadImageData(const unsigned char* data, size_t dataSize)
+{
+    return m_logoOverlay->LoadImageData(data, dataSize);
+}
+
+void ProjectM::LogoOverlaySetEnabled(bool enabled)
+{
+    m_logoOverlay->SetEnabled(enabled);
+}
+
+auto ProjectM::LogoOverlayIsEnabled() const -> bool
+{
+    return m_logoOverlay->IsEnabled();
+}
+
+void ProjectM::LogoOverlaySetPosition(Renderer::LogoAnchor anchor, float offsetX, float offsetY)
+{
+    m_logoOverlay->SetPosition(anchor, offsetX, offsetY);
+}
+
+void ProjectM::LogoOverlaySetSize(float scale)
+{
+    m_logoOverlay->SetSize(scale);
+}
+
+void ProjectM::LogoOverlaySetOpacity(float opacity)
+{
+    m_logoOverlay->SetOpacity(opacity);
+}
+
+void ProjectM::LogoOverlaySetRotation(float degrees)
+{
+    m_logoOverlay->SetRotation(degrees);
+}
+
+void ProjectM::LogoOverlaySetBeatReactivity(float intensity)
+{
+    m_logoOverlay->SetBeatReactivity(intensity);
+}
+
+void ProjectM::LogoOverlayClear()
+{
+    m_logoOverlay->Clear();
+}
+
+void ProjectM::LogoOverlaySetReactiveEffect(Renderer::LogoReactiveEffect effect)
+{
+    m_logoOverlay->SetReactiveEffect(effect);
+}
+
+void ProjectM::LogoOverlaySetReactiveSensitivity(float sensitivity)
+{
+    m_logoOverlay->SetReactiveSensitivity(sensitivity);
+}
+
+void ProjectM::LogoOverlaySetMotionEffect(Renderer::LogoMotionEffect effect)
+{
+    m_logoOverlay->SetMotionEffect(effect);
+}
+
+void ProjectM::LogoOverlaySetMotionSpeed(float secondsPerCycle)
+{
+    m_logoOverlay->SetMotionSpeed(secondsPerCycle);
+}
+
+void ProjectM::LogoOverlaySetRandomReactive(bool enabled)
+{
+    m_logoOverlay->SetRandomReactive(enabled);
+}
+
+void ProjectM::LogoOverlaySetRandomMotion(bool enabled)
+{
+    m_logoOverlay->SetRandomMotion(enabled);
+}
+
+void ProjectM::LogoOverlaySetRandomInterval(float seconds)
+{
+    m_logoOverlay->SetRandomInterval(seconds);
 }
 
 auto ProjectM::GetRenderContext() -> Renderer::RenderContext

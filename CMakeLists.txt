@@ -279,4 +279,17 @@ endif()
 # Create CPack configuration
 set(CPACK_PACKAGE_NAME "projectM")
 set(CPACK_VERBATIM_VARIABLES YES)
+
+# NSIS installer settings for Windows
+if(CMAKE_SYSTEM_NAME STREQUAL Windows AND ENABLE_SDL_UI)
+    set(CPACK_NSIS_DISPLAY_NAME "projectM ${PROJECT_VERSION}")
+    set(CPACK_NSIS_PACKAGE_NAME "projectM ${PROJECT_VERSION}")
+    set(CPACK_NSIS_EXECUTABLES_DIRECTORY "${PROJECTM_BIN_DIR}")
+    set(CPACK_NSIS_MUI_FINISHPAGE_RUN "projectM-Test-UI.exe")
+    set(CPACK_PACKAGE_EXECUTABLES "projectM-Test-UI;projectM Visualizer")
+    set(CPACK_CREATE_DESKTOP_LINKS "projectM-Test-UI")
+    set(CPACK_NSIS_MODIFY_PATH OFF)
+    set(CPACK_NSIS_ENABLE_UNINSTALL_BEFORE_INSTALL ON)
+endif()
+
 include(CPack)

@@ -7,8 +7,10 @@
 #include <Logging.hpp>
 
 #include <Audio/AudioConstants.hpp>
+#include <Renderer/LogoOverlay.hpp>
 #include <Renderer/Platform/GLResolver.hpp>
 
+#include <projectM-4/logo_overlay.h>
 #include <projectM-4/parameters.h>
 #include <projectM-4/render_opengl.h>
 
@@ -536,6 +538,121 @@ uint32_t projectm_sprite_get_max_sprites(projectm_handle instance)
     auto* projectMInstance = handle_to_instance(instance);
 
     return projectMInstance->UserSpriteLimit();
+}
+
+// ---- Logo Overlay C API ----
+
+bool projectm_logo_overlay_load_image(projectm_handle instance, const char* image_path)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+
+    return projectMInstance->LogoOverlayLoadImage(image_path ? image_path : "");
+}
+
+bool projectm_logo_overlay_load_image_data(projectm_handle instance, const unsigned char* data, size_t data_size)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+
+    return projectMInstance->LogoOverlayLoadImageData(data, data_size);
+}
+
+void projectm_logo_overlay_set_enabled(projectm_handle instance, bool enabled)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+
+    projectMInstance->LogoOverlaySetEnabled(enabled);
+}
+
+bool projectm_logo_overlay_is_enabled(projectm_handle instance)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+
+    return projectMInstance->LogoOverlayIsEnabled();
+}
+
+void projectm_logo_overlay_set_position(projectm_handle instance, projectm_logo_anchor anchor,
+                                         float offset_x, float offset_y)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+
+    projectMInstance->LogoOverlaySetPosition(static_cast<libprojectM::Renderer::LogoAnchor>(anchor), offset_x, offset_y);
+}
+
+void projectm_logo_overlay_set_size(projectm_handle instance, float scale)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+
+    projectMInstance->LogoOverlaySetSize(scale);
+}
+
+void projectm_logo_overlay_set_opacity(projectm_handle instance, float opacity)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+
+    projectMInstance->LogoOverlaySetOpacity(opacity);
+}
+
+void projectm_logo_overlay_set_rotation(projectm_handle instance, float degrees)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+
+    projectMInstance->LogoOverlaySetRotation(degrees);
+}
+
+void projectm_logo_overlay_set_beat_reactivity(projectm_handle instance, float intensity)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+
+    projectMInstance->LogoOverlaySetBeatReactivity(intensity);
+}
+
+void projectm_logo_overlay_clear(projectm_handle instance)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+
+    projectMInstance->LogoOverlayClear();
+}
+
+void projectm_logo_overlay_set_reactive_effect(projectm_handle instance, projectm_logo_reactive_effect effect)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+    projectMInstance->LogoOverlaySetReactiveEffect(static_cast<libprojectM::Renderer::LogoReactiveEffect>(effect));
+}
+
+void projectm_logo_overlay_set_reactive_sensitivity(projectm_handle instance, float sensitivity)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+    projectMInstance->LogoOverlaySetReactiveSensitivity(sensitivity);
+}
+
+void projectm_logo_overlay_set_motion_effect(projectm_handle instance, projectm_logo_motion_effect effect)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+    projectMInstance->LogoOverlaySetMotionEffect(static_cast<libprojectM::Renderer::LogoMotionEffect>(effect));
+}
+
+void projectm_logo_overlay_set_motion_speed(projectm_handle instance, float seconds_per_cycle)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+    projectMInstance->LogoOverlaySetMotionSpeed(seconds_per_cycle);
+}
+
+void projectm_logo_overlay_set_random_reactive(projectm_handle instance, bool enabled)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+    projectMInstance->LogoOverlaySetRandomReactive(enabled);
+}
+
+void projectm_logo_overlay_set_random_motion(projectm_handle instance, bool enabled)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+    projectMInstance->LogoOverlaySetRandomMotion(enabled);
+}
+
+void projectm_logo_overlay_set_random_interval(projectm_handle instance, float seconds)
+{
+    auto* projectMInstance = handle_to_instance(instance);
+    projectMInstance->LogoOverlaySetRandomInterval(seconds);
 }
 
 void projectm_set_log_callback(projectm_log_callback callback, bool current_thread_only, void* user_data)

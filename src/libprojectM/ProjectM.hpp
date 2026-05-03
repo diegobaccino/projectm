@@ -37,11 +37,15 @@ namespace libprojectM {
 
 namespace Renderer {
 class CopyTexture;
+class LogoOverlay;
 class PresetTransition;
 class Renderer;
 class TextureManager;
 class ShaderCache;
 class TransitionShaderManager;
+enum class LogoAnchor : uint8_t;
+enum class LogoReactiveEffect : uint8_t;
+enum class LogoMotionEffect : uint8_t;
 } // namespace Renderer
 
 namespace UserSprites {
@@ -281,6 +285,40 @@ public:
      */
     void BurnInTexture(uint32_t openGlTextureId, int left, int top, int width, int height);
 
+    // ---- Logo Overlay API ----
+
+    /**
+     * @brief Loads a logo image from a file path for overlay rendering.
+     * @param filePath Path to the image file (PNG, GIF, BMP, JPG, TGA).
+     * @return true if the image was decoded successfully.
+     */
+    bool LogoOverlayLoadImage(const std::string& filePath);
+
+    /**
+     * @brief Loads a logo image from a memory buffer for overlay rendering.
+     * @param data Pointer to the image data.
+     * @param dataSize Size of the image data in bytes.
+     * @return true if the image was decoded successfully.
+     */
+    bool LogoOverlayLoadImageData(const unsigned char* data, size_t dataSize);
+
+    void LogoOverlaySetEnabled(bool enabled);
+    auto LogoOverlayIsEnabled() const -> bool;
+    void LogoOverlaySetPosition(Renderer::LogoAnchor anchor, float offsetX, float offsetY);
+    void LogoOverlaySetSize(float scale);
+    void LogoOverlaySetOpacity(float opacity);
+    void LogoOverlaySetRotation(float degrees);
+    void LogoOverlaySetBeatReactivity(float intensity);
+    void LogoOverlayClear();
+
+    void LogoOverlaySetReactiveEffect(Renderer::LogoReactiveEffect effect);
+    void LogoOverlaySetReactiveSensitivity(float sensitivity);
+    void LogoOverlaySetMotionEffect(Renderer::LogoMotionEffect effect);
+    void LogoOverlaySetMotionSpeed(float secondsPerCycle);
+    void LogoOverlaySetRandomReactive(bool enabled);
+    void LogoOverlaySetRandomMotion(bool enabled);
+    void LogoOverlaySetRandomInterval(float seconds);
+
 private:
     void Initialize();
 
@@ -331,6 +369,7 @@ private:
     std::unique_ptr<Renderer::PresetTransition> m_transition;                     //!< Transition effect used for blending.
     std::unique_ptr<TimeKeeper> m_timeKeeper;                                     //!< Keeps the different timers used to render and switch presets.
     std::unique_ptr<UserSprites::SpriteManager> m_spriteManager;                  //!< Manages all types of user sprites.
+    std::unique_ptr<Renderer::LogoOverlay> m_logoOverlay;                         //!< Persistent logo overlay renderer.
 };
 
 } // namespace libprojectM

@@ -36,3 +36,4 @@
 #include "projectM-4/touch.h"
 #include "projectM-4/version.h"
 #include "projectM-4/user_sprites.h"
+#include "projectM-4/logo_overlay.h"

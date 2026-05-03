@@ -52,6 +52,8 @@ add_library(Renderer OBJECT
         ShaderCache.hpp
         Texture.cpp
         Texture.hpp
+        LogoOverlay.cpp
+        LogoOverlay.hpp
         TextureAttachment.cpp
         TextureAttachment.hpp
         TextureManager.cpp

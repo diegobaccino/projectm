@@ -1,0 +1,12 @@
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/lib/projectM_eval.lib
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/include/projectm-eval/projectm-eval.h
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/lib/cmake/projectM-Eval/projectM-EvalConfigVersion.cmake
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/lib/cmake/projectM-Eval/projectM-EvalConfig.cmake
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/lib/cmake/projectM-Eval/projectM-EvalTargets.cmake
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/lib/cmake/projectM-Eval/projectM-EvalTargets-debug.cmake
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/lib/projectM_ns-eel2.lib
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/include/projectm-eval/ns-eel2/ns-eel.h
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/lib/cmake/projectM-EvalMilkdrop/projectM-EvalMilkdropConfigVersion.cmake
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/lib/cmake/projectM-EvalMilkdrop/projectM-EvalMilkdropConfig.cmake
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/lib/cmake/projectM-EvalMilkdrop/projectM-EvalMilkdropTargets.cmake
+C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/debug/lib/cmake/projectM-EvalMilkdrop/projectM-EvalMilkdropTargets-debug.cmake

@@ -1,0 +1,8 @@
+Package: projectm-eval
+Version: 1.0.6
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 5606a766951d1c516222f367b6bb3e69849461b80821009d49b6e2799812c461
+Description: The projectM Expression Evaluation Library. A portable drop-in replacement of Milkdrop's "ns-eel2" expression parser for use in Milkdrop, projectM and other applications.

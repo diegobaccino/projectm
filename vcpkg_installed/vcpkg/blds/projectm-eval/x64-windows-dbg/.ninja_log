@@ -1,0 +1,14 @@
+# ninja log v7
+20	247	7994899674198774	projectm-eval/CMakeFiles/projectM_eval.dir/CompileContext.c.obj	50a39ee40e162ef8
+29	267	7994899674288018	projectm-eval/CMakeFiles/projectM_eval.dir/CompilerFunctions.c.obj	68e101aa2ded553
+49	270	7994899674485145	projectm-eval/CMakeFiles/projectM_eval.dir/MemoryBuffer.c.obj	9dced7309ff69dcc
+38	274	7994899674365199	projectm-eval/CMakeFiles/projectM_eval.dir/ExpressionTree.c.obj	86259f28a301df9e
+13	277	7994899674125989	projectm-eval/CMakeFiles/projectM_eval.dir/Scanner.c.obj	2dc6f3e9a35f12e
+6	278	7994899674055865	projectm-eval/CMakeFiles/projectM_eval.dir/Compiler.c.obj	91f92359bb5d8b6
+71	279	7994899674684331	projectm-eval/CMakeFiles/projectM_eval.dir/TreeVariables.c.obj	bcfd47567ce49754
+62	319	7994899674600327	projectm-eval/CMakeFiles/projectM_eval.dir/TreeFunctions.c.obj	ffa07377e3b184d9
+95	346	7994899674953618	projectm-eval/CMakeFiles/projectM_eval.dir/api/projectm-eval.c.obj	7c15df4dea98878a
+250	391	7994899676485892	ns-eel2-shim/CMakeFiles/projectM_ns-eel2.dir/ns-eel.c.obj	28f479f4fbfc9015
+346	438	7994899677426670	projectm-eval/projectM_eval.lib	9867c0ce0bc27515
+438	505	7994899678314324	ns-eel2-shim/projectM_ns-eel2.lib	1f778178b0cea9fe
+505	921	7994899679044917	CMakeFiles/install.util	74be9203961b2c23

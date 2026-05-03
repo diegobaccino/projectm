@@ -1,0 +1,15 @@
+Downloading https://github.com/projectM-visualizer/projectm-eval/archive/v1.0.6.tar.gz -> projectM-visualizer-projectm-eval-v1.0.6.tar.gz
+Successfully downloaded projectM-visualizer-projectm-eval-v1.0.6.tar.gz
+-- Extracting source C:/Users/diegobaccino/AppData/Local/vcpkg/downloads/projectM-visualizer-projectm-eval-v1.0.6.tar.gz
+-- Using source at C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/src/v1.0.6-2857e8f355.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+Downloading msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst, trying https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+Successfully downloaded msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+Downloading msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/diegobaccino/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Installing: C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/share/projectm-eval/copyright
+-- Installing: C:/Source/projectm/vcpkg_installed/vcpkg/pkgs/projectm-eval_x64-windows/share/projectm-eval/usage
+-- Performing post-build validation

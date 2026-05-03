@@ -1,0 +1,17 @@
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/CMakeFiles/edit_cache.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/CMakeFiles/rebuild_cache.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/CMakeFiles/list_install_components.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/CMakeFiles/install.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/CMakeFiles/install/local.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/projectm-eval/CMakeFiles/projectM_eval.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/projectm-eval/CMakeFiles/edit_cache.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/projectm-eval/CMakeFiles/rebuild_cache.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/projectm-eval/CMakeFiles/list_install_components.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/projectm-eval/CMakeFiles/install.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/projectm-eval/CMakeFiles/install/local.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/ns-eel2-shim/CMakeFiles/projectM_ns-eel2.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/ns-eel2-shim/CMakeFiles/edit_cache.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/ns-eel2-shim/CMakeFiles/rebuild_cache.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/ns-eel2-shim/CMakeFiles/list_install_components.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/ns-eel2-shim/CMakeFiles/install.dir
+C:/Source/projectm/vcpkg_installed/vcpkg/blds/projectm-eval/x64-windows-dbg/ns-eel2-shim/CMakeFiles/install/local.dir

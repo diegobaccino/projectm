@@ -1,0 +1,42 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 760bbb65ecc20a63e2fb0e0fee4b726773d478fbcc533c85ae3852982e4c241e
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 3506e7801d07a9efe62a04d9febc6dd4cc17af00cbe1de064578e24496c68048
+Status: install ok installed
+
+Package: projectm-eval
+Version: 1.0.6
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 5606a766951d1c516222f367b6bb3e69849461b80821009d49b6e2799812c461
+Description: The projectM Expression Evaluation Library. A portable drop-in replacement of Milkdrop's "ns-eel2" expression parser for use in Milkdrop, projectM and other applications.
+Status: install ok installed
+
+Package: glm
+Version: 1.0.3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e5759ac92706ec061ad0e18c2c981fbd6733ac6848de4b17f8a89b8513d192c2
+Description: OpenGL Mathematics (GLM)
+Status: install ok installed
+
+Package: sdl2
+Version: 2.32.10
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e440771f06ed301c362193e7cd3a58f4626f3c14b1bf20ae245e1c6df5e57653
+Description: Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.
+Status: install ok installed
+

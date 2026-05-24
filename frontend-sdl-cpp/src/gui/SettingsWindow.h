@@ -54,6 +54,11 @@ private:
     void DrawHelpTab() const;
 
     /**
+     * @brief Reloads logo state from the active user configuration.
+     */
+    void ReloadLogoStateFromConfig();
+
+    /**
      * @brief Displays the save button.
      */
     void SaveButton();
@@ -164,9 +169,9 @@ private:
     float _logoScale{0.15f};
     float _logoRotation{0.0f};
     float _logoBeatReactivity{0.0f};
-    int _logoAnchor{8}; // BottomRight
-    float _logoOffsetX{-20.0f};
-    float _logoOffsetY{-20.0f};
+    int _logoAnchor{4}; // Center
+    float _logoOffsetX{0.0f};
+    float _logoOffsetY{0.0f};
     std::string _logoPath;
     bool _logoLoaded{false};
 
@@ -178,4 +183,11 @@ private:
     bool _logoRandomReactive{false};
     bool _logoRandomMotion{false};
     float _logoRandomInterval{15.0f};
+
+    /**
+     * @brief Persists current settings state to the active user configuration file.
+     * @param notifySuccess Shows a toast notification on success if true.
+     * @return true if settings were saved, false otherwise.
+     */
+    bool PersistSettings(bool notifySuccess);
 };

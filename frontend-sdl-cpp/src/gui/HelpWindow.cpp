@@ -169,4 +169,6 @@ void HelpWindow::FillKeyboardShortcutsTable()
         {"Add Random Waveform at Mouse Pointer", "Shift+Left Mouse"},
         {"Clear Random Waveforms", "Middle Mouse"},
         {"Copy Current Preset Path to Clipboard", "Ctrl-c"}};
+
+    _shortcuts.emplace_back("Switch Profiles by Slot", "Ctrl+1 .. Ctrl+9");
 }

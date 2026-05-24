@@ -1,0 +1,3 @@
+# CMake generation dependency list for this directory.
+C:/Source/projectm/cmake/GenerateShaderResources.cmake
+C:/Source/projectm/src/libprojectM/Renderer/CMakeLists.txt

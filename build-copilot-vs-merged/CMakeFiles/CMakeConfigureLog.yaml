@@ -1,0 +1,1095 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.40+3e7442088 for .NET Framework
+      Build started 5/23/2026 7:44:19 PM.
+      
+      Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\3.31.6-msvc6\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\3.31.6-msvc6\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\3.31.6-msvc6\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.39
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/3.31.6-msvc6/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.40+3e7442088 for .NET Framework
+      Build started 5/23/2026 7:44:21 PM.
+      
+      Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\3.31.6-msvc6\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\3.31.6-msvc6\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\3.31.6-msvc6\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.91
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/3.31.6-msvc6/CompilerIdCXX/CompilerIdCXX.exe
+      
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:54 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-5tux5s"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-5tux5s"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-5tux5s'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_47055.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:24 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-5tux5s\\cmTC_47055.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_47055.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-5tux5s\\Debug\\".
+          Creating directory "cmTC_47055.dir\\Debug\\cmTC_47055.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_47055.dir\\Debug\\cmTC_47055.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_47055.dir\\Debug\\cmTC_47055.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_47055.dir\\Debug\\\\" /Fd"cmTC_47055.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_47055.dir\\Debug\\\\" /Fd"cmTC_47055.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-5tux5s\\Debug\\cmTC_47055.exe" /INCREMENTAL /ILK:"cmTC_47055.dir\\Debug\\cmTC_47055.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-5tux5s/Debug/cmTC_47055.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-5tux5s/Debug/cmTC_47055.lib" /MACHINE:X64  /machine:x64 cmTC_47055.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_47055.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-5tux5s\\Debug\\cmTC_47055.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_47055.dir\\Debug\\cmTC_47055.tlog\\unsuccessfulbuild".
+          Touching "cmTC_47055.dir\\Debug\\cmTC_47055.tlog\\cmTC_47055.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-5tux5s\\cmTC_47055.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.90
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35226.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/EnableCFlagsIfSupported.cmake:14 (check_cxx_compiler_flag)"
+      - "features.cmake:21 (enable_cflags_if_supported)"
+      - "CMakeLists.txt:209 (include)"
+    checks:
+      - "Performing Test CXXFLAG__EHsc_SUPPORTED"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-nptd63"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-nptd63"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "CXXFLAG__EHsc_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-nptd63'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d5c09.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:24 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nptd63\\cmTC_d5c09.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_d5c09.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nptd63\\Debug\\".
+          Creating directory "cmTC_d5c09.dir\\Debug\\cmTC_d5c09.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_d5c09.dir\\Debug\\cmTC_d5c09.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d5c09.dir\\Debug\\cmTC_d5c09.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__EHsc_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"cmTC_d5c09.dir\\Debug\\\\" /Fd"cmTC_d5c09.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nptd63\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__EHsc_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"cmTC_d5c09.dir\\Debug\\\\" /Fd"cmTC_d5c09.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nptd63\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nptd63\\Debug\\cmTC_d5c09.exe" /INCREMENTAL /ILK:"cmTC_d5c09.dir\\Debug\\cmTC_d5c09.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-nptd63/Debug/cmTC_d5c09.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-nptd63/Debug/cmTC_d5c09.lib" /MACHINE:X64  /machine:x64 cmTC_d5c09.dir\\Debug\\src.obj
+          cmTC_d5c09.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nptd63\\Debug\\cmTC_d5c09.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_d5c09.dir\\Debug\\cmTC_d5c09.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d5c09.dir\\Debug\\cmTC_d5c09.tlog\\cmTC_d5c09.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nptd63\\cmTC_d5c09.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.85
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:54 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-dlb4p6"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-dlb4p6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-dlb4p6'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f6544.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:25 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-dlb4p6\\cmTC_f6544.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f6544.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-dlb4p6\\Debug\\".
+          Creating directory "cmTC_f6544.dir\\Debug\\cmTC_f6544.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f6544.dir\\Debug\\cmTC_f6544.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f6544.dir\\Debug\\cmTC_f6544.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"cmTC_f6544.dir\\Debug\\\\" /Fd"cmTC_f6544.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"cmTC_f6544.dir\\Debug\\\\" /Fd"cmTC_f6544.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-dlb4p6\\Debug\\cmTC_f6544.exe" /INCREMENTAL /ILK:"cmTC_f6544.dir\\Debug\\cmTC_f6544.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-dlb4p6/Debug/cmTC_f6544.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-dlb4p6/Debug/cmTC_f6544.lib" /MACHINE:X64  /machine:x64 cmTC_f6544.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_f6544.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-dlb4p6\\Debug\\cmTC_f6544.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_f6544.dir\\Debug\\cmTC_f6544.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f6544.dir\\Debug\\cmTC_f6544.tlog\\cmTC_f6544.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-dlb4p6\\cmTC_f6544.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.77
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35226.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/EnableCFlagsIfSupported.cmake:14 (check_cxx_compiler_flag)"
+      - "features.cmake:21 (enable_cflags_if_supported)"
+      - "CMakeLists.txt:209 (include)"
+    checks:
+      - "Performing Test CXXFLAG__GR_SUPPORTED"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-4g8ysk"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-4g8ysk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "CXXFLAG__GR_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-4g8ysk'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_064ce.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:26 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-4g8ysk\\cmTC_064ce.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_064ce.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-4g8ysk\\Debug\\".
+          Creating directory "cmTC_064ce.dir\\Debug\\cmTC_064ce.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_064ce.dir\\Debug\\cmTC_064ce.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_064ce.dir\\Debug\\cmTC_064ce.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__GR_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_064ce.dir\\Debug\\\\" /Fd"cmTC_064ce.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-4g8ysk\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__GR_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_064ce.dir\\Debug\\\\" /Fd"cmTC_064ce.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-4g8ysk\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-4g8ysk\\Debug\\cmTC_064ce.exe" /INCREMENTAL /ILK:"cmTC_064ce.dir\\Debug\\cmTC_064ce.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-4g8ysk/Debug/cmTC_064ce.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-4g8ysk/Debug/cmTC_064ce.lib" /MACHINE:X64  /machine:x64 cmTC_064ce.dir\\Debug\\src.obj
+          cmTC_064ce.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-4g8ysk\\Debug\\cmTC_064ce.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_064ce.dir\\Debug\\cmTC_064ce.tlog\\unsuccessfulbuild".
+          Touching "cmTC_064ce.dir\\Debug\\cmTC_064ce.tlog\\cmTC_064ce.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-4g8ysk\\cmTC_064ce.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.85
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/EnableCFlagsIfSupported.cmake:14 (check_cxx_compiler_flag)"
+      - "features.cmake:21 (enable_cflags_if_supported)"
+      - "CMakeLists.txt:209 (include)"
+    checks:
+      - "Performing Test CXXFLAG__EHsc_SUPPORTED"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-0ytxp8"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-0ytxp8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "CXXFLAG__EHsc_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-0ytxp8'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3225c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:27 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-0ytxp8\\cmTC_3225c.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_3225c.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-0ytxp8\\Debug\\".
+          Creating directory "cmTC_3225c.dir\\Debug\\cmTC_3225c.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_3225c.dir\\Debug\\cmTC_3225c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_3225c.dir\\Debug\\cmTC_3225c.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__EHsc_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"cmTC_3225c.dir\\Debug\\\\" /Fd"cmTC_3225c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-0ytxp8\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__EHsc_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"cmTC_3225c.dir\\Debug\\\\" /Fd"cmTC_3225c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-0ytxp8\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-0ytxp8\\Debug\\cmTC_3225c.exe" /INCREMENTAL /ILK:"cmTC_3225c.dir\\Debug\\cmTC_3225c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-0ytxp8/Debug/cmTC_3225c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-0ytxp8/Debug/cmTC_3225c.lib" /MACHINE:X64  /machine:x64 cmTC_3225c.dir\\Debug\\src.obj
+          cmTC_3225c.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-0ytxp8\\Debug\\cmTC_3225c.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_3225c.dir\\Debug\\cmTC_3225c.tlog\\unsuccessfulbuild".
+          Touching "cmTC_3225c.dir\\Debug\\cmTC_3225c.tlog\\cmTC_3225c.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-0ytxp8\\cmTC_3225c.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.83
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/EnableCFlagsIfSupported.cmake:14 (check_cxx_compiler_flag)"
+      - "features.cmake:21 (enable_cflags_if_supported)"
+      - "CMakeLists.txt:209 (include)"
+    checks:
+      - "Performing Test CXXFLAG__W4_SUPPORTED"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-om2o3d"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-om2o3d"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "CXXFLAG__W4_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-om2o3d'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1fb58.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:27 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-om2o3d\\cmTC_1fb58.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_1fb58.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-om2o3d\\Debug\\".
+          Creating directory "cmTC_1fb58.dir\\Debug\\cmTC_1fb58.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1fb58.dir\\Debug\\cmTC_1fb58.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1fb58.dir\\Debug\\cmTC_1fb58.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__W4_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"cmTC_1fb58.dir\\Debug\\\\" /Fd"cmTC_1fb58.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-om2o3d\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__W4_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"cmTC_1fb58.dir\\Debug\\\\" /Fd"cmTC_1fb58.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-om2o3d\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-om2o3d\\Debug\\cmTC_1fb58.exe" /INCREMENTAL /ILK:"cmTC_1fb58.dir\\Debug\\cmTC_1fb58.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-om2o3d/Debug/cmTC_1fb58.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-om2o3d/Debug/cmTC_1fb58.lib" /MACHINE:X64  /machine:x64 cmTC_1fb58.dir\\Debug\\src.obj
+          cmTC_1fb58.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-om2o3d\\Debug\\cmTC_1fb58.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_1fb58.dir\\Debug\\cmTC_1fb58.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1fb58.dir\\Debug\\cmTC_1fb58.tlog\\cmTC_1fb58.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-om2o3d\\cmTC_1fb58.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.83
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/EnableCFlagsIfSupported.cmake:14 (check_cxx_compiler_flag)"
+      - "features.cmake:21 (enable_cflags_if_supported)"
+      - "CMakeLists.txt:209 (include)"
+    checks:
+      - "Performing Test CXXFLAG__GR_SUPPORTED"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-yusvt3"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-yusvt3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "CXXFLAG__GR_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-yusvt3'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_30ae0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:28 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-yusvt3\\cmTC_30ae0.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_30ae0.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-yusvt3\\Debug\\".
+          Creating directory "cmTC_30ae0.dir\\Debug\\cmTC_30ae0.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_30ae0.dir\\Debug\\cmTC_30ae0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_30ae0.dir\\Debug\\cmTC_30ae0.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__GR_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_30ae0.dir\\Debug\\\\" /Fd"cmTC_30ae0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-yusvt3\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__GR_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_30ae0.dir\\Debug\\\\" /Fd"cmTC_30ae0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-yusvt3\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-yusvt3\\Debug\\cmTC_30ae0.exe" /INCREMENTAL /ILK:"cmTC_30ae0.dir\\Debug\\cmTC_30ae0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-yusvt3/Debug/cmTC_30ae0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-yusvt3/Debug/cmTC_30ae0.lib" /MACHINE:X64  /machine:x64 cmTC_30ae0.dir\\Debug\\src.obj
+          cmTC_30ae0.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-yusvt3\\Debug\\cmTC_30ae0.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_30ae0.dir\\Debug\\cmTC_30ae0.tlog\\unsuccessfulbuild".
+          Touching "cmTC_30ae0.dir\\Debug\\cmTC_30ae0.tlog\\cmTC_30ae0.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-yusvt3\\cmTC_30ae0.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.78
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/EnableCFlagsIfSupported.cmake:14 (check_cxx_compiler_flag)"
+      - "features.cmake:21 (enable_cflags_if_supported)"
+      - "CMakeLists.txt:209 (include)"
+    checks:
+      - "Performing Test CXXFLAG__W4_SUPPORTED"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-bmsaks"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-bmsaks"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "CXXFLAG__W4_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-bmsaks'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_64bb1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:29 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-bmsaks\\cmTC_64bb1.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_64bb1.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-bmsaks\\Debug\\".
+          Creating directory "cmTC_64bb1.dir\\Debug\\cmTC_64bb1.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_64bb1.dir\\Debug\\cmTC_64bb1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_64bb1.dir\\Debug\\cmTC_64bb1.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__W4_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"cmTC_64bb1.dir\\Debug\\\\" /Fd"cmTC_64bb1.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-bmsaks\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CXXFLAG__W4_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"cmTC_64bb1.dir\\Debug\\\\" /Fd"cmTC_64bb1.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-bmsaks\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-bmsaks\\Debug\\cmTC_64bb1.exe" /INCREMENTAL /ILK:"cmTC_64bb1.dir\\Debug\\cmTC_64bb1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-bmsaks/Debug/cmTC_64bb1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-bmsaks/Debug/cmTC_64bb1.lib" /MACHINE:X64  /machine:x64 cmTC_64bb1.dir\\Debug\\src.obj
+          cmTC_64bb1.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-bmsaks\\Debug\\cmTC_64bb1.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_64bb1.dir\\Debug\\cmTC_64bb1.tlog\\unsuccessfulbuild".
+          Touching "cmTC_64bb1.dir\\Debug\\cmTC_64bb1.tlog\\cmTC_64bb1.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-bmsaks\\cmTC_64bb1.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.81
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckSourceCompiles.cmake:89 (cmake_check_source_compiles)"
+      - "cmake/FilesystemSupport.cmake:7 (check_source_compiles)"
+      - "features.cmake:29 (include)"
+      - "CMakeLists.txt:209 (include)"
+    checks:
+      - "Performing Test STD_FILESYSTEM_EXISTS"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-3dpbln"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-3dpbln"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "STD_FILESYSTEM_EXISTS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-3dpbln'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_73f5c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:28 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-3dpbln\\cmTC_73f5c.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_73f5c.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-3dpbln\\Debug\\".
+          Creating directory "cmTC_73f5c.dir\\Debug\\cmTC_73f5c.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_73f5c.dir\\Debug\\cmTC_73f5c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_73f5c.dir\\Debug\\cmTC_73f5c.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D STD_FILESYSTEM_EXISTS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_73f5c.dir\\Debug\\\\" /Fd"cmTC_73f5c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-3dpbln\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D STD_FILESYSTEM_EXISTS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_73f5c.dir\\Debug\\\\" /Fd"cmTC_73f5c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-3dpbln\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-3dpbln\\Debug\\cmTC_73f5c.exe" /INCREMENTAL /ILK:"cmTC_73f5c.dir\\Debug\\cmTC_73f5c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-3dpbln/Debug/cmTC_73f5c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-3dpbln/Debug/cmTC_73f5c.lib" /MACHINE:X64  /machine:x64 cmTC_73f5c.dir\\Debug\\src.obj
+          cmTC_73f5c.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-3dpbln\\Debug\\cmTC_73f5c.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_73f5c.dir\\Debug\\cmTC_73f5c.tlog\\unsuccessfulbuild".
+          Touching "cmTC_73f5c.dir\\Debug\\cmTC_73f5c.tlog\\cmTC_73f5c.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-3dpbln\\cmTC_73f5c.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:02.05
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/GenerateExportHeader.cmake:206 (check_cxx_source_compiles)"
+      - "cmake/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "cmake/GenerateExportHeader.cmake:421 (_test_compiler_has_deprecated)"
+      - "src/api/CMakeLists.txt:9 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-rixars"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-rixars"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-rixars'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d3f52.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:31 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_d3f52.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\Debug\\".
+          Creating directory "cmTC_d3f52.dir\\Debug\\cmTC_d3f52.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_d3f52.dir\\Debug\\cmTC_d3f52.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d3f52.dir\\Debug\\cmTC_d3f52.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_d3f52.dir\\Debug\\\\" /Fd"cmTC_d3f52.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_d3f52.dir\\Debug\\\\" /Fd"cmTC_d3f52.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx"
+          src.cxx
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(1,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(1,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-rixars\\cmTC_d3f52.vcxproj]
+        
+            0 Warning(s)
+            6 Error(s)
+        
+        Time Elapsed 00:00:00.54
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckSourceCompiles.cmake:89 (cmake_check_source_compiles)"
+      - "cmake/FilesystemSupport.cmake:7 (check_source_compiles)"
+      - "features.cmake:29 (include)"
+      - "CMakeLists.txt:209 (include)"
+    checks:
+      - "Performing Test STD_FILESYSTEM_EXISTS"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-nfgd9n"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-nfgd9n"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "STD_FILESYSTEM_EXISTS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-nfgd9n'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_edef7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:31 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nfgd9n\\cmTC_edef7.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_edef7.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nfgd9n\\Debug\\".
+          Creating directory "cmTC_edef7.dir\\Debug\\cmTC_edef7.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_edef7.dir\\Debug\\cmTC_edef7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_edef7.dir\\Debug\\cmTC_edef7.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D STD_FILESYSTEM_EXISTS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_edef7.dir\\Debug\\\\" /Fd"cmTC_edef7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nfgd9n\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D STD_FILESYSTEM_EXISTS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_edef7.dir\\Debug\\\\" /Fd"cmTC_edef7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nfgd9n\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nfgd9n\\Debug\\cmTC_edef7.exe" /INCREMENTAL /ILK:"cmTC_edef7.dir\\Debug\\cmTC_edef7.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-nfgd9n/Debug/cmTC_edef7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-nfgd9n/Debug/cmTC_edef7.lib" /MACHINE:X64  /machine:x64 cmTC_edef7.dir\\Debug\\src.obj
+          cmTC_edef7.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nfgd9n\\Debug\\cmTC_edef7.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_edef7.dir\\Debug\\cmTC_edef7.tlog\\unsuccessfulbuild".
+          Touching "cmTC_edef7.dir\\Debug\\cmTC_edef7.tlog\\cmTC_edef7.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-nfgd9n\\cmTC_edef7.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:02.08
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/GenerateExportHeader.cmake:206 (check_cxx_source_compiles)"
+      - "cmake/GenerateExportHeader.cmake:269 (_check_cxx_compiler_attribute)"
+      - "cmake/GenerateExportHeader.cmake:421 (_test_compiler_has_deprecated)"
+      - "src/api/CMakeLists.txt:9 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-9cdj0t"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-9cdj0t"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-9cdj0t'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_42835.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:32 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-9cdj0t\\cmTC_42835.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_42835.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-9cdj0t\\Debug\\".
+          Creating directory "cmTC_42835.dir\\Debug\\cmTC_42835.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_42835.dir\\Debug\\cmTC_42835.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_42835.dir\\Debug\\cmTC_42835.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_42835.dir\\Debug\\\\" /Fd"cmTC_42835.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-9cdj0t\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_42835.dir\\Debug\\\\" /Fd"cmTC_42835.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-9cdj0t\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-9cdj0t\\Debug\\cmTC_42835.exe" /INCREMENTAL /ILK:"cmTC_42835.dir\\Debug\\cmTC_42835.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-9cdj0t/Debug/cmTC_42835.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-9cdj0t/Debug/cmTC_42835.lib" /MACHINE:X64  /machine:x64 cmTC_42835.dir\\Debug\\src.obj
+          cmTC_42835.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-9cdj0t\\Debug\\cmTC_42835.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_42835.dir\\Debug\\cmTC_42835.tlog\\unsuccessfulbuild".
+          Touching "cmTC_42835.dir\\Debug\\cmTC_42835.tlog\\cmTC_42835.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-9cdj0t\\cmTC_42835.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.82
+        
+      exitCode: 0
+...
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/GenerateExportHeader.cmake:206 (check_cxx_source_compiles)"
+      - "cmake/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "cmake/GenerateExportHeader.cmake:421 (_test_compiler_has_deprecated)"
+      - "src/api/CMakeLists.txt:9 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-wvcg86"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-wvcg86"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-wvcg86'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_13bc1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:33 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_13bc1.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\Debug\\".
+          Creating directory "cmTC_13bc1.dir\\Debug\\cmTC_13bc1.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_13bc1.dir\\Debug\\cmTC_13bc1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_13bc1.dir\\Debug\\cmTC_13bc1.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_13bc1.dir\\Debug\\\\" /Fd"cmTC_13bc1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_13bc1.dir\\Debug\\\\" /Fd"cmTC_13bc1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx"
+          src.cxx
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(1,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+        C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(1,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+          C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-wvcg86\\cmTC_13bc1.vcxproj]
+        
+            0 Warning(s)
+            6 Error(s)
+        
+        Time Elapsed 00:00:00.50
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/GenerateExportHeader.cmake:206 (check_cxx_source_compiles)"
+      - "cmake/GenerateExportHeader.cmake:269 (_check_cxx_compiler_attribute)"
+      - "cmake/GenerateExportHeader.cmake:421 (_test_compiler_has_deprecated)"
+      - "src/api/CMakeLists.txt:9 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED"
+    directories:
+      source: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-oy669c"
+      binary: "C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-oy669c"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Source/projectm/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "YES"
+      VCPKG_INSTALLED_DIR: "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/diegobaccino/Downloads/vcpkg"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-oy669c'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d920d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 7:44:34 PM.
+        
+        Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-oy669c\\cmTC_d920d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_d920d.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-oy669c\\Debug\\".
+          Creating directory "cmTC_d920d.dir\\Debug\\cmTC_d920d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_d920d.dir\\Debug\\cmTC_d920d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d920d.dir\\Debug\\cmTC_d920d.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_d920d.dir\\Debug\\\\" /Fd"cmTC_d920d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-oy669c\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35226 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_d920d.dir\\Debug\\\\" /Fd"cmTC_d920d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-oy669c\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-oy669c\\Debug\\cmTC_d920d.exe" /INCREMENTAL /ILK:"cmTC_d920d.dir\\Debug\\cmTC_d920d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-oy669c/Debug/cmTC_d920d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Source/projectm/build-copilot-vs-merged/CMakeFiles/CMakeScratch/TryCompile-oy669c/Debug/cmTC_d920d.lib" /MACHINE:X64  /machine:x64 cmTC_d920d.dir\\Debug\\src.obj
+          cmTC_d920d.vcxproj -> C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-oy669c\\Debug\\cmTC_d920d.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_d920d.dir\\Debug\\cmTC_d920d.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d920d.dir\\Debug\\cmTC_d920d.tlog\\cmTC_d920d.lastbuildstate".
+        Done Building Project "C:\\Source\\projectm\\build-copilot-vs-merged\\CMakeFiles\\CMakeScratch\\TryCompile-oy669c\\cmTC_d920d.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.87
+        
+      exitCode: 0
+...

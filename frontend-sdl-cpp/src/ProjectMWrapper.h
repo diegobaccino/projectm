@@ -80,6 +80,12 @@ public:
      */
     void PresetFileNameToClipboard() const;
 
+    /**
+     * @brief Tries to load the last preset used by the active profile.
+     * @return True if a matching preset was found and loaded.
+     */
+    bool LoadLastPresetForActiveProfile();
+
 private:
     /**
      * @brief projectM callback. Called whenever a preset is switched.

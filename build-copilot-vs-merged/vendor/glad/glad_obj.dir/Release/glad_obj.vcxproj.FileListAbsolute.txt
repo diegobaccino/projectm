@@ -1,0 +1,1 @@
+C:\Source\projectm\build-copilot-vs-merged\vendor\glad\glad_obj.dir\Release\glad_obj.lib

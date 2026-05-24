@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Source\projectm\build-copilot-vs-merged\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Source\projectm\build-copilot-vs-merged\src\api\x64\Release\projectM_api</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Source\projectm\build-copilot-vs-merged\vendor\glm\x64\Release\glm</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\Release\projectM-4.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Source\projectm\build-copilot-vs-merged\src\playlist\Release\projectM-4-playlist.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

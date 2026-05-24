@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\BlurTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Border.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\CustomShape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\CustomWaveform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\DarkenCenter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\EvalLibMutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Filters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\FinalComposite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\IdlePreset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropPreset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MotionVectors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerFrameContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerPixelContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerPixelMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PresetFileParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PresetState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\ShapePerFrameContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\VideoEcho.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\WaveformPerFrameContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\WaveformPerPointContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\CenteredSpiro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Circle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\DerivativeLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\DoubleLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\ExplosiveHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Line.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\LineBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveFlower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveLasso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveSkewed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveStar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\SpectrumLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\WaveformMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\XYOscillationSpiral.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\BlurTexture.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Border.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Constants.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\CustomShape.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\CustomWaveform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\DarkenCenter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Filters.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\FinalComposite.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\IdlePreset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropPreset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropPresetExceptions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropShader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MotionVectors.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerFrameContext.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerPixelContext.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerPixelMesh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PresetFileParser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PresetState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\ShapePerFrameContext.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\VideoEcho.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\WaveformMode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\WaveformPerFrameContext.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\WaveformPerPointContext.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\CenteredSpiro.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Circle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\DerivativeLine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\DoubleLine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\ExplosiveHash.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Line.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\LineBase.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave11.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave9.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveFlower.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveLasso.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveSkewed.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveStar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveX.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\SpectrumLine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\WaveformMath.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\XYOscillationSpiral.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Source\projectm\build-copilot-vs-merged\CMakeFiles\471e91ec504a0c2620ed5c25233739f9\MilkdropStaticShaders.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag" />
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{93344E11-2A61-3FE6-9FCE-B080A081745B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{43AAD83F-506E-36A7-B3E7-ACFBCDB27CF2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E33E7390-A2B3-384B-8525-DE1800EE583B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\projectM_main.dir\Release\projectM_main.lib

@@ -1,0 +1,1 @@
+C:\Source\projectm\build-copilot-vs-merged\src\playlist\projectM_playlist_main.dir\Release\projectM_playlist_main.lib

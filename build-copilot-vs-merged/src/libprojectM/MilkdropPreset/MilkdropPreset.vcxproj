@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{06D3B493-D978-391B-A183-2D2968EC523A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>MilkdropPreset</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MilkdropPreset.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MilkdropPreset.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MilkdropPreset</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MilkdropPreset.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MilkdropPreset.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MilkdropPreset</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MilkdropPreset.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MilkdropPreset.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MilkdropPreset</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MilkdropPreset.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MilkdropPreset.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MilkdropPreset</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed/x64-windows/include/projectm-eval"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PROJECTM_CXX_STATIC_DEFINE;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PROJECTM_CXX_STATIC_DEFINE;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\build-copilot-vs-merged\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\build-copilot-vs-merged\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed/x64-windows/include/projectm-eval"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\build-copilot-vs-merged\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\build-copilot-vs-merged\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed/x64-windows/include/projectm-eval"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\build-copilot-vs-merged\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\build-copilot-vs-merged\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed/x64-windows/include/projectm-eval"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\build-copilot-vs-merged\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src\libprojectM\MilkdropPreset\..;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\build-copilot-vs-merged\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Source\projectm\build-copilot-vs-merged\CMakeFiles\471e91ec504a0c2620ed5c25233739f9\MilkdropStaticShaders.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating MilkdropStaticShaders.cpp, MilkdropStaticShaders.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Source\projectm\src\libprojectM\MilkdropPreset
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D SHADER_FILES="Shaders/Blur1FragmentShaderGlsl330.frag;Shaders/Blur2FragmentShaderGlsl330.frag;Shaders/BlurVertexShaderGlsl330.vert;Shaders/PresetCompVertexShaderGlsl330.vert;Shaders/PresetMotionVectorsVertexShaderGlsl330.vert;Shaders/PresetShaderHeaderGlsl330.inc;Shaders/PresetWarpFragmentShaderGlsl330.frag;Shaders/PresetWarpVertexShaderGlsl330.vert;Shaders/TexturedDrawFragmentShaderGlsl330.frag;Shaders/TexturedDrawVertexShaderGlsl330.vert;Shaders/UntexturedDrawFragmentShaderGlsl330.frag;Shaders/UntexturedDrawVertexShaderGlsl330.vert" -D OUTPUT_DIR=C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/MilkdropPreset -P C:/Source/projectm/src/libprojectM/MilkdropPreset/GenerateStaticShaders.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in;C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in;C:\Source\projectm\src\libprojectM\MilkdropPreset\GenerateStaticShaders.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating MilkdropStaticShaders.cpp, MilkdropStaticShaders.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Source\projectm\src\libprojectM\MilkdropPreset
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D SHADER_FILES="Shaders/Blur1FragmentShaderGlsl330.frag;Shaders/Blur2FragmentShaderGlsl330.frag;Shaders/BlurVertexShaderGlsl330.vert;Shaders/PresetCompVertexShaderGlsl330.vert;Shaders/PresetMotionVectorsVertexShaderGlsl330.vert;Shaders/PresetShaderHeaderGlsl330.inc;Shaders/PresetWarpFragmentShaderGlsl330.frag;Shaders/PresetWarpVertexShaderGlsl330.vert;Shaders/TexturedDrawFragmentShaderGlsl330.frag;Shaders/TexturedDrawVertexShaderGlsl330.vert;Shaders/UntexturedDrawFragmentShaderGlsl330.frag;Shaders/UntexturedDrawVertexShaderGlsl330.vert" -D OUTPUT_DIR=C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/MilkdropPreset -P C:/Source/projectm/src/libprojectM/MilkdropPreset/GenerateStaticShaders.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in;C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in;C:\Source\projectm\src\libprojectM\MilkdropPreset\GenerateStaticShaders.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating MilkdropStaticShaders.cpp, MilkdropStaticShaders.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Source\projectm\src\libprojectM\MilkdropPreset
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D SHADER_FILES="Shaders/Blur1FragmentShaderGlsl330.frag;Shaders/Blur2FragmentShaderGlsl330.frag;Shaders/BlurVertexShaderGlsl330.vert;Shaders/PresetCompVertexShaderGlsl330.vert;Shaders/PresetMotionVectorsVertexShaderGlsl330.vert;Shaders/PresetShaderHeaderGlsl330.inc;Shaders/PresetWarpFragmentShaderGlsl330.frag;Shaders/PresetWarpVertexShaderGlsl330.vert;Shaders/TexturedDrawFragmentShaderGlsl330.frag;Shaders/TexturedDrawVertexShaderGlsl330.vert;Shaders/UntexturedDrawFragmentShaderGlsl330.frag;Shaders/UntexturedDrawVertexShaderGlsl330.vert" -D OUTPUT_DIR=C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/MilkdropPreset -P C:/Source/projectm/src/libprojectM/MilkdropPreset/GenerateStaticShaders.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in;C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in;C:\Source\projectm\src\libprojectM\MilkdropPreset\GenerateStaticShaders.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating MilkdropStaticShaders.cpp, MilkdropStaticShaders.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Source\projectm\src\libprojectM\MilkdropPreset
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D SHADER_FILES="Shaders/Blur1FragmentShaderGlsl330.frag;Shaders/Blur2FragmentShaderGlsl330.frag;Shaders/BlurVertexShaderGlsl330.vert;Shaders/PresetCompVertexShaderGlsl330.vert;Shaders/PresetMotionVectorsVertexShaderGlsl330.vert;Shaders/PresetShaderHeaderGlsl330.inc;Shaders/PresetWarpFragmentShaderGlsl330.frag;Shaders/PresetWarpVertexShaderGlsl330.vert;Shaders/TexturedDrawFragmentShaderGlsl330.frag;Shaders/TexturedDrawVertexShaderGlsl330.vert;Shaders/UntexturedDrawFragmentShaderGlsl330.frag;Shaders/UntexturedDrawVertexShaderGlsl330.vert" -D OUTPUT_DIR=C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/MilkdropPreset -P C:/Source/projectm/src/libprojectM/MilkdropPreset/GenerateStaticShaders.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag;C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert;C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in;C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in;C:\Source\projectm\src\libprojectM\MilkdropPreset\GenerateStaticShaders.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Source/projectm/src/libprojectM/MilkdropPreset/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/MilkdropPreset/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Source/projectm/src/libprojectM/MilkdropPreset/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/MilkdropPreset/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Source/projectm/src/libprojectM/MilkdropPreset/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/MilkdropPreset/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Source/projectm/src/libprojectM/MilkdropPreset/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/MilkdropPreset/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag">
+    </None>
+    <None Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert">
+    </None>
+    <ClCompile Include="C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp" />
+    <ClInclude Include="C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\BlurTexture.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\BlurTexture.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Border.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Border.hpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Constants.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\CustomShape.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\CustomShape.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\CustomWaveform.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\CustomWaveform.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\DarkenCenter.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\DarkenCenter.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\EvalLibMutex.cpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Factory.cpp">
+      <ObjectFileName>$(IntDir)/Factory.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Factory.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Filters.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Filters.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\FinalComposite.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\FinalComposite.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\IdlePreset.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\IdlePreset.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropPreset.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropPreset.hpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropPresetExceptions.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropShader.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropShader.hpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MotionVectors.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\MotionVectors.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerFrameContext.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerFrameContext.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerPixelContext.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerPixelContext.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerPixelMesh.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PerPixelMesh.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PresetFileParser.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PresetFileParser.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PresetState.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\PresetState.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\ShapePerFrameContext.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\ShapePerFrameContext.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\VideoEcho.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\VideoEcho.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveform.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveform.hpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\WaveformMode.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\WaveformPerFrameContext.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\WaveformPerFrameContext.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\WaveformPerPointContext.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\WaveformPerPointContext.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\CenteredSpiro.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\CenteredSpiro.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Circle.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Circle.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\DerivativeLine.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\DerivativeLine.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\DoubleLine.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\DoubleLine.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\ExplosiveHash.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\ExplosiveHash.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Factory.cpp">
+      <ObjectFileName>$(IntDir)/Waveforms/Factory.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Factory.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Line.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Line.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\LineBase.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\LineBase.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave11.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave11.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave9.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave9.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveFlower.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveFlower.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveLasso.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveLasso.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveSkewed.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveSkewed.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveStar.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveStar.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveX.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveX.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\SpectrumLine.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\SpectrumLine.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\WaveformMath.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\WaveformMath.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\XYOscillationSpiral.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\MilkdropPreset\Waveforms\XYOscillationSpiral.hpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\ZERO_CHECK.vcxproj">
+      <Project>{653F1287-42D6-3C7A-BCF9-3645EC66D6AC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\vendor\glm\glm.vcxproj">
+      <Project>{E0F8AAC6-9045-3C02-B765-4EA557394BC5}</Project>
+      <Name>glm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\vendor\hlslparser\hlslparser.vcxproj">
+      <Project>{86D5AE94-5F2D-3BE8-A3DD-EFFBF848A6DD}</Project>
+      <Name>hlslparser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\src\api\projectM_api.vcxproj">
+      <Project>{43CC3E59-7120-321E-BB5C-B6D4BA79EF89}</Project>
+      <Name>projectM_api</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

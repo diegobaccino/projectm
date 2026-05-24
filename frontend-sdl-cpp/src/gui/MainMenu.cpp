@@ -10,10 +10,13 @@
 #include "notifications/PlaybackControlNotification.h"
 #include "notifications/QuitNotification.h"
 #include "notifications/UpdateWindowTitleNotification.h"
+#include "notifications/DisplayToastNotification.h"
 
 #include "imgui.h"
 
 #include <Poco/NotificationCenter.h>
+
+#include <algorithm>
 
 
 MainMenu::MainMenu(ProjectMGUI& gui)
@@ -30,6 +33,50 @@ void MainMenu::Draw()
     {
         if (ImGui::BeginMenu("File"))
         {
+            auto& app = ProjectMSDLApplication::instance();
+
+            if (ImGui::BeginMenu("Switch Profile"))
+            {
+                const auto& profiles = app.Profiles();
+                const auto activeIndex = app.ActiveProfileIndex();
+
+                for (size_t i = 0; i < profiles.size(); ++i)
+                {
+                    const auto shortcut = (i < 9) ? ("Ctrl+" + std::to_string(i + 1)) : "";
+                    const auto label = std::to_string(i + 1) + ". " + profiles[i].name;
+
+                    if (ImGui::MenuItem(label.c_str(), shortcut.c_str(), i == activeIndex))
+                    {
+                        std::string message;
+                        if (app.SwitchProfileByIndex(i, message))
+                        {
+                            _projectMWrapper.LoadLastPresetForActiveProfile();
+                            _notificationCenter.postNotification(new DisplayToastNotification(message));
+                        }
+                        else
+                        {
+                            _notificationCenter.postNotification(new DisplayToastNotification("Profile switch failed: " + message));
+                        }
+                    }
+                }
+
+                ImGui::EndMenu();
+            }
+
+            if (ImGui::MenuItem("Create Profile..."))
+            {
+                std::fill(_newProfileName.begin(), _newProfileName.end(), '\0');
+                _openCreateProfilePopup = true;
+            }
+
+            if (ImGui::MenuItem("Delete Profile..."))
+            {
+                _deleteProfileSelection = static_cast<int>(app.ActiveProfileIndex());
+                _openDeleteProfilePopup = true;
+            }
+
+            ImGui::Separator();
+
             if (ImGui::MenuItem("Settings...", "Ctrl+s"))
             {
                 _gui.ShowSettingsWindow();
@@ -44,6 +91,21 @@ void MainMenu::Draw()
 
             ImGui::EndMenu();
         }
+
+        if (_openCreateProfilePopup)
+        {
+            ImGui::OpenPopup("Create Profile");
+            _openCreateProfilePopup = false;
+        }
+
+        if (_openDeleteProfilePopup)
+        {
+            ImGui::OpenPopup("Delete Profile");
+            _openDeleteProfilePopup = false;
+        }
+
+        DrawCreateProfilePopup();
+        DrawDeleteProfilePopup();
 
         if (ImGui::BeginMenu("Playback"))
         {
@@ -163,4 +225,103 @@ void MainMenu::Draw()
 
         ImGui::EndMainMenuBar();
     }
+}
+
+void MainMenu::DrawCreateProfilePopup()
+{
+    if (!ImGui::BeginPopupModal("Create Profile", nullptr, ImGuiWindowFlags_AlwaysAutoResize))
+    {
+        return;
+    }
+
+    ImGui::Text("Create a new profile (max 9).");
+    ImGui::InputText("Name", _newProfileName.data(), _newProfileName.size());
+
+    if (ImGui::Button("Create"))
+    {
+        std::string message;
+        auto& app = ProjectMSDLApplication::instance();
+        if (app.CreateProfile(_newProfileName.data(), message))
+        {
+            _notificationCenter.postNotification(new DisplayToastNotification(message));
+            ImGui::CloseCurrentPopup();
+        }
+        else
+        {
+            _notificationCenter.postNotification(new DisplayToastNotification("Create profile failed: " + message));
+        }
+    }
+
+    ImGui::SameLine();
+    if (ImGui::Button("Cancel"))
+    {
+        ImGui::CloseCurrentPopup();
+    }
+
+    ImGui::EndPopup();
+}
+
+void MainMenu::DrawDeleteProfilePopup()
+{
+    if (!ImGui::BeginPopupModal("Delete Profile", nullptr, ImGuiWindowFlags_AlwaysAutoResize))
+    {
+        return;
+    }
+
+    auto& app = ProjectMSDLApplication::instance();
+    const auto& profiles = app.Profiles();
+
+    if (profiles.empty())
+    {
+        ImGui::Text("No profiles available.");
+    }
+    else
+    {
+        if (_deleteProfileSelection < 0 || _deleteProfileSelection >= static_cast<int>(profiles.size()))
+        {
+            _deleteProfileSelection = static_cast<int>(app.ActiveProfileIndex());
+        }
+
+        const auto selectedName = profiles[static_cast<size_t>(_deleteProfileSelection)].name;
+        ImGui::Text("Delete profile:");
+        if (ImGui::BeginCombo("##DeleteProfileCombo", selectedName.c_str()))
+        {
+            for (size_t i = 0; i < profiles.size(); ++i)
+            {
+                bool selected = _deleteProfileSelection == static_cast<int>(i);
+                if (ImGui::Selectable(profiles[i].name.c_str(), selected))
+                {
+                    _deleteProfileSelection = static_cast<int>(i);
+                }
+                if (selected)
+                {
+                    ImGui::SetItemDefaultFocus();
+                }
+            }
+            ImGui::EndCombo();
+        }
+    }
+
+    if (ImGui::Button("Delete"))
+    {
+        std::string message;
+        if (app.DeleteProfileByIndex(static_cast<size_t>(_deleteProfileSelection), message))
+        {
+            _projectMWrapper.LoadLastPresetForActiveProfile();
+            _notificationCenter.postNotification(new DisplayToastNotification(message));
+            ImGui::CloseCurrentPopup();
+        }
+        else
+        {
+            _notificationCenter.postNotification(new DisplayToastNotification("Delete profile failed: " + message));
+        }
+    }
+
+    ImGui::SameLine();
+    if (ImGui::Button("Cancel"))
+    {
+        ImGui::CloseCurrentPopup();
+    }
+
+    ImGui::EndPopup();
 }

@@ -1,0 +1,24 @@
+^C:\SOURCE\PROJECTM\BUILD-COPILOT-VS-MERGED\CMAKEFILES\F94CF8EED18E1CF3C6F4B9FA01DCEA78\BUILTINTRANSITIONSRESOURCES.HPP.RULE
+setlocal
+cd C:\Source\projectm\src\libprojectM\Renderer
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D SHADER_FILES=TransitionShaders/TransitionShaderBuiltInCircleGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInPlasmaGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSimpleBlendGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSweepGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInWarpGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInZoomBlurGlsl330.frag\;TransitionShaders/TransitionVertexShaderGlsl330.vert\;TransitionShaders/TransitionShaderHeaderGlsl330.frag\;TransitionShaders/TransitionShaderMainGlsl330.frag -D OUTPUT_FILE=C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/Renderer/BuiltInTransitionsResources.hpp -P C:/Source/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\SOURCE\PROJECTM\SRC\LIBPROJECTM\RENDERER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/Renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

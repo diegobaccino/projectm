@@ -1,0 +1,1 @@
+C:\Source\projectm\build-copilot-vs-merged\vendor\hlslparser\hlslparser.dir\Release\hlslparser.lib

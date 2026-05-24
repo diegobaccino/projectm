@@ -1,0 +1,1 @@
+C:\Source\projectm\build-copilot-vs-merged\vendor\stb_image\stb_image.dir\Release\stb_image.lib

@@ -172,6 +172,11 @@ void ProjectMWrapper::RenderFrame() const
 
 void ProjectMWrapper::DisplayInitialPreset()
 {
+    if (LoadLastPresetForActiveProfile())
+    {
+        return;
+    }
+
     if (!_projectMConfigView->getBool("enableSplash", true))
     {
         if (_projectMConfigView->getBool("shuffleEnabled", true))
@@ -217,10 +222,62 @@ void ProjectMWrapper::PresetSwitchedEvent(bool isHardCut, unsigned int index, vo
 {
     auto that = reinterpret_cast<ProjectMWrapper*>(context);
     auto presetName = projectm_playlist_item(that->_playlist, index);
-    poco_information_f1(that->_logger, "Displaying preset: %s", std::string(presetName));
-    projectm_playlist_free_string(presetName);
+
+    if (presetName)
+    {
+        std::string presetPath(presetName);
+        poco_information_f1(that->_logger, "Displaying preset: %s", presetPath);
+
+        try
+        {
+            that->_userConfig->setString("profile.lastPresetPath", presetPath);
+
+            auto configFile = Poco::Util::Application::instance().config().getString("app.UserConfigurationFile", "");
+            if (!configFile.empty())
+            {
+                auto userConfig = ProjectMSDLApplication::instance().UserConfiguration();
+                userConfig->save(configFile);
+            }
+        }
+        catch (const Poco::Exception& ex)
+        {
+            poco_warning_f1(that->_logger, "Could not persist last used preset: %s", ex.displayText());
+        }
+
+        projectm_playlist_free_string(presetName);
+    }
 
     Poco::NotificationCenter::defaultCenter().postNotification(new UpdateWindowTitleNotification);
+}
+
+bool ProjectMWrapper::LoadLastPresetForActiveProfile()
+{
+    auto lastPresetPath = _userConfig->getString("profile.lastPresetPath", "");
+    if (lastPresetPath.empty())
+    {
+        return false;
+    }
+
+    const auto playlistSize = projectm_playlist_size(_playlist);
+    for (uint32_t i = 0; i < playlistSize; ++i)
+    {
+        auto item = projectm_playlist_item(_playlist, i);
+        if (!item)
+        {
+            continue;
+        }
+
+        std::string itemPath(item);
+        projectm_playlist_free_string(item);
+
+        if (itemPath == lastPresetPath)
+        {
+            projectm_playlist_set_position(_playlist, i, true);
+            return true;
+        }
+    }
+
+    return false;
 }
 
 void ProjectMWrapper::PlaybackControlNotificationHandler(const Poco::AutoPtr<PlaybackControlNotification>& notification)

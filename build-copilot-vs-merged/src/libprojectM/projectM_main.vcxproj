@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C6B15B39-24F3-3EAE-924A-A11B33334BB5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>projectM_main</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">projectM_main.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">projectM_main.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">projectM_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">projectM_main.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">projectM_main.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">projectM_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">projectM_main.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">projectM_main.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">projectM_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">projectM_main.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">projectM_main.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">projectM_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PROJECTM_CXX_STATIC_DEFINE;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PROJECTM_CXX_STATIC_DEFINE;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\projectm\build-copilot-vs-merged\include;C:\Source\projectm\vendor\glad\include;C:\Source\projectm\src;C:\Source\projectm\src\libprojectM;C:\Source\projectm\src\libprojectM\Renderer;C:\Source\projectm\vendor\hlslparser\src;C:\Source\projectm\src\libprojectM\MilkdropPreset;C:\Source\projectm\src\libprojectM\Audio\..;C:\Source\projectm\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\api\include;C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset;C:\Source\projectm\vendor\glm\..;C:\Source\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Source\projectm\src\libprojectM\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Source/projectm/src/libprojectM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Source\projectm\src\libprojectM\projectM4Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Source/projectm/src/libprojectM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Source\projectm\src\libprojectM\projectM4Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Source/projectm/src/libprojectM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Source\projectm\src\libprojectM\projectM4Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Source/projectm/src/libprojectM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Source\projectm\src\libprojectM\projectM4Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\Logging.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\Logging.hpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\Preset.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\PresetFactory.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\PresetFactory.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\PresetFactoryManager.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\PresetFactoryManager.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\ProjectM.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\ProjectM.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\ProjectMCWrapper.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);projectM_api_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);projectM_api_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(PreprocessorDefinitions);projectM_api_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(PreprocessorDefinitions);projectM_api_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\ProjectMCWrapper.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\TimeKeeper.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\TimeKeeper.hpp" />
+    <ClCompile Include="C:\Source\projectm\src\libprojectM\Utils.cpp" />
+    <ClInclude Include="C:\Source\projectm\src\libprojectM\Utils.hpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\ZERO_CHECK.vcxproj">
+      <Project>{653F1287-42D6-3C7A-BCF9-3645EC66D6AC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\Audio\Audio.vcxproj">
+      <Project>{C0161516-D61F-35E1-929F-FBF454023344}</Project>
+      <Name>Audio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\MilkdropPreset\MilkdropPreset.vcxproj">
+      <Project>{06D3B493-D978-391B-A183-2D2968EC523A}</Project>
+      <Name>MilkdropPreset</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\Renderer\Renderer.vcxproj">
+      <Project>{E4F0AF13-4E54-38C3-81F2-987B1C1E619B}</Project>
+      <Name>Renderer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\vendor\glad\glad.vcxproj">
+      <Project>{14948688-49FD-31F9-9D34-8DC546B991BA}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\vendor\glm\glm.vcxproj">
+      <Project>{E0F8AAC6-9045-3C02-B765-4EA557394BC5}</Project>
+      <Name>glm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\vendor\hlslparser\hlslparser.vcxproj">
+      <Project>{86D5AE94-5F2D-3BE8-A3DD-EFFBF848A6DD}</Project>
+      <Name>hlslparser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\src\api\projectM_api.vcxproj">
+      <Project>{43CC3E59-7120-321E-BB5C-B6D4BA79EF89}</Project>
+      <Name>projectM_api</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\projectm\build-copilot-vs-merged\vendor\stb_image\stb_image.vcxproj">
+      <Project>{FD96BAF2-42ED-3004-BBAB-9F475D90FBF2}</Project>
+      <Name>stb_image</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

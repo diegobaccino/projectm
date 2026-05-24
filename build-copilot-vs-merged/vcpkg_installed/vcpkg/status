@@ -1,0 +1,33 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 1c22c7719509918eb5e25725012d794b16351529d9ff5d18d23d560c8f90481c
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 52f331287a3ec76facd54ee5e46114ca6ff8fed67c32060e9b21f00262ce88cf
+Status: install ok installed
+
+Package: projectm-eval
+Version: 1.0.6
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 361cc24c2641e4504ee8fd7b6f0712f4a20992d679d64e3b30eb596426393eb5
+Description: The projectM Expression Evaluation Library. A portable drop-in replacement of Milkdrop's "ns-eel2" expression parser for use in Milkdrop, projectM and other applications.
+Status: install ok installed
+
+Package: glm
+Version: 1.0.3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: f1d8dad2d980bf3cc168cb69d9fc2a90073c188b7b3da62aa445e95b42a5742c
+Description: OpenGL Mathematics (GLM)
+Status: install ok installed
+

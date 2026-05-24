@@ -9,6 +9,7 @@
 #include <Poco/Logger.h>
 #include <Poco/NObserver.h>
 #include <Poco/Notification.h>
+#include <Poco/Util/AbstractConfiguration.h>
 
 class ProjectMGUI;
 
@@ -76,6 +77,16 @@ protected:
      * @brief Loads persisted logo overlay configuration from user settings.
      */
     void LoadPersistedLogoConfig();
+
+    /**
+     * @brief Event callback if a user configuration value has changed.
+     */
+    void OnUserConfigurationPropertyChanged(const Poco::Util::AbstractConfiguration::KeyValue& property);
+
+    /**
+     * @brief Event callback if a user configuration value has been removed.
+     */
+    void OnUserConfigurationPropertyRemoved(const std::string& key);
 
     AudioCapture& _audioCapture;
     ProjectMWrapper& _projectMWrapper;

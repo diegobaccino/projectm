@@ -4,6 +4,9 @@
 
 #include "gui/ProjectMGUI.h"
 
+#include "notifications/DisplayToastNotification.h"
+
+#include <Poco/Delegate.h>
 #include <Poco/NotificationCenter.h>
 
 #include <Poco/Util/Application.h>
@@ -33,6 +36,9 @@ void RenderLoop::Run()
 
     notificationCenter.addObserver(_quitNotificationObserver);
 
+    _userConfig->propertyChanged += Poco::delegate(this, &RenderLoop::OnUserConfigurationPropertyChanged);
+    _userConfig->propertyRemoved += Poco::delegate(this, &RenderLoop::OnUserConfigurationPropertyRemoved);
+
     // Load persisted logo configuration on startup
     LoadPersistedLogoConfig();
 
@@ -58,6 +64,9 @@ void RenderLoop::Run()
     }
 
     notificationCenter.removeObserver(_quitNotificationObserver);
+
+    _userConfig->propertyRemoved -= Poco::delegate(this, &RenderLoop::OnUserConfigurationPropertyRemoved);
+    _userConfig->propertyChanged -= Poco::delegate(this, &RenderLoop::OnUserConfigurationPropertyChanged);
 
     projectm_playlist_set_preset_switched_event_callback(_playlistHandle, nullptr, nullptr);
 }
@@ -230,7 +239,7 @@ void RenderLoop::KeyEvent(const SDL_KeyboardEvent& event, bool down)
     auto keyCode{event.keysym.sym};
     bool modifierPressed{false};
 
-    if (keyModifier & KMOD_LGUI || keyModifier & KMOD_RGUI || keyModifier & KMOD_LCTRL)
+    if ((keyModifier & KMOD_GUI) || (keyModifier & KMOD_CTRL))
     {
         modifierPressed = true;
     }
@@ -269,6 +278,32 @@ void RenderLoop::KeyEvent(const SDL_KeyboardEvent& event, bool down)
 
     switch (keyCode)
     {
+        case SDLK_1:
+        case SDLK_2:
+        case SDLK_3:
+        case SDLK_4:
+        case SDLK_5:
+        case SDLK_6:
+        case SDLK_7:
+        case SDLK_8:
+        case SDLK_9:
+            if (modifierPressed)
+            {
+                auto& app = ProjectMSDLApplication::instance();
+                const auto profileSlot = static_cast<size_t>(keyCode - SDLK_1);
+                std::string message;
+                if (app.SwitchProfileByIndex(profileSlot, message))
+                {
+                    _projectMWrapper.LoadLastPresetForActiveProfile();
+                    Poco::NotificationCenter::defaultCenter().postNotification(new DisplayToastNotification(message));
+                }
+                else
+                {
+                    Poco::NotificationCenter::defaultCenter().postNotification(new DisplayToastNotification("Profile switch failed: " + message));
+                }
+            }
+            break;
+
         case SDLK_ESCAPE:
             _projectMGui.Toggle();
             _sdlRenderingWindow.ShowCursor(_projectMGui.Visible());
@@ -358,6 +393,28 @@ void RenderLoop::KeyEvent(const SDL_KeyboardEvent& event, bool down)
             _projectMWrapper.ChangeBeatSensitivity(-0.01f);
             break;
     }
+}
+
+void RenderLoop::OnUserConfigurationPropertyChanged(const Poco::Util::AbstractConfiguration::KeyValue& property)
+{
+    OnUserConfigurationPropertyRemoved(property.key());
+}
+
+void RenderLoop::OnUserConfigurationPropertyRemoved(const std::string& key)
+{
+    if (key.rfind("logo.", 0) != 0)
+    {
+        return;
+    }
+
+    auto logoPath = _userConfig->getString("logo.path", "");
+    if (logoPath.empty())
+    {
+        projectm_logo_overlay_clear(_projectMHandle);
+        return;
+    }
+
+    LoadPersistedLogoConfig();
 }
 
 void RenderLoop::ScrollEvent(const SDL_MouseWheelEvent& event)
@@ -465,9 +522,9 @@ void RenderLoop::LoadPersistedLogoConfig()
         float rotation = static_cast<float>(_userConfig->getDouble("logo.rotation", 0.0));
         projectm_logo_overlay_set_rotation(_projectMHandle, rotation);
 
-        int anchor = _userConfig->getInt("logo.anchor", 8);
-        float offsetX = static_cast<float>(_userConfig->getDouble("logo.offsetX", -20.0));
-        float offsetY = static_cast<float>(_userConfig->getDouble("logo.offsetY", -20.0));
+        int anchor = _userConfig->getInt("logo.anchor", 4);
+        float offsetX = static_cast<float>(_userConfig->getDouble("logo.offsetX", 0.0));
+        float offsetY = static_cast<float>(_userConfig->getDouble("logo.offsetY", 0.0));
         projectm_logo_overlay_set_position(_projectMHandle, static_cast<projectm_logo_anchor>(anchor), offsetX, offsetY);
 
         int reactiveEffect = _userConfig->getInt("logo.reactiveEffect", 0);

@@ -1,0 +1,24 @@
+^C:\SOURCE\PROJECTM\BUILD-COPILOT-VS-MERGED\CMAKEFILES\9FFD5F60854B5BBEFF84E8386563DD3C\SPRITESHADERS.HPP.RULE
+setlocal
+cd C:\Source\projectm\src\libprojectM\UserSprites
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D SHADER_FILES=Shaders/MilkdropSpriteFragmentGlsl330.frag\;Shaders/MilkdropSpriteVertexGlsl330.vert -D OUTPUT_FILE=C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/UserSprites/SpriteShaders.hpp -P C:/Source/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\SOURCE\PROJECTM\SRC\LIBPROJECTM\USERSPRITES\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/UserSprites/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

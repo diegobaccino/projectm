@@ -1,0 +1,10 @@
+^C:\SOURCE\PROJECTM\BUILD-COPILOT-VS-MERGED\CMAKEFILES\B6CE0C8E0DD1684C1294558DEB49AC0D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Source/projectm/build-copilot-vs-merged/libprojectM.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

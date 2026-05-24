@@ -1,0 +1,24 @@
+^C:\SOURCE\PROJECTM\BUILD-COPILOT-VS-MERGED\CMAKEFILES\471E91EC504A0C2620ED5C25233739F9\MILKDROPSTATICSHADERS.CPP.RULE
+setlocal
+cd C:\Source\projectm\src\libprojectM\MilkdropPreset
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D SHADER_FILES="Shaders/Blur1FragmentShaderGlsl330.frag;Shaders/Blur2FragmentShaderGlsl330.frag;Shaders/BlurVertexShaderGlsl330.vert;Shaders/PresetCompVertexShaderGlsl330.vert;Shaders/PresetMotionVectorsVertexShaderGlsl330.vert;Shaders/PresetShaderHeaderGlsl330.inc;Shaders/PresetWarpFragmentShaderGlsl330.frag;Shaders/PresetWarpVertexShaderGlsl330.vert;Shaders/TexturedDrawFragmentShaderGlsl330.frag;Shaders/TexturedDrawVertexShaderGlsl330.vert;Shaders/UntexturedDrawFragmentShaderGlsl330.frag;Shaders/UntexturedDrawVertexShaderGlsl330.vert" -D OUTPUT_DIR=C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/MilkdropPreset -P C:/Source/projectm/src/libprojectM/MilkdropPreset/GenerateStaticShaders.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\SOURCE\PROJECTM\SRC\LIBPROJECTM\MILKDROPPRESET\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Source/projectm -BC:/Source/projectm/build-copilot-vs-merged --check-stamp-file C:/Source/projectm/build-copilot-vs-merged/src/libprojectM/MilkdropPreset/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

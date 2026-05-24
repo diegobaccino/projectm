@@ -1,168 +1,144 @@
-# Building The Portable Windows EXE (Unified Repo)
+# Building Portable projectMSDL on Windows (Unified Repo)
 
-This document is the canonical process for rebuilding and updating the portable
-`projectMSDL.exe` package from this unified repository.
+This is the current, working process to build and package a portable app from this repo.
 
-## What Changed (Repo Unification)
+## Scope
 
-- Core projectM code is in this repo root.
-- Standalone UI frontend code is now in `frontend-sdl-cpp/` inside this same repo.
-- The overlay/logo upload UI work lives in frontend sources (for example,
-  `frontend-sdl-cpp/src/gui/SettingsWindow.*` and related files), while the core
-  logo API lives in libprojectM.
+- Core projectM source: this repo root
+- Frontend source: frontend-sdl-cpp inside this repo
+- Portable output target: C:/Users/diegobaccino/Downloads/ProjectMPortable
 
-If overlay settings are missing in the app, verify frontend code/branch content,
-not just libprojectM API symbols.
+## Profile Feature Status
 
-## Prerequisites
+The profile system is implemented in this branch:
 
-- Windows with Visual Studio 2022 Build Tools installed.
-- vcpkg checkout at:
-  `C:/Users/diegobaccino/Downloads/vcpkg`
-- CMake from Visual Studio Build Tools:
-  `C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe`
+- Profile picker on startup (interactive terminal launches)
+- Create/delete profile UI
+- File menu profile switcher
+- Numeric profile shortcuts `Ctrl+1` to `Ctrl+9`
+- Per-profile last-used preset persistence
 
-## Important Lessons Learned
+## Dependency Policy (Repo-local)
 
-- Do not rely on `cmake` being in PATH.
-- Do not use `-G Ninja` unless Ninja is definitely installed and discoverable.
-  Using Visual Studio generator avoids this issue.
-- Build/install core first, then point frontend to that local install using
-  `CMAKE_PREFIX_PATH` and `projectM4_DIR`.
-- For portability, include all DLLs from frontend vcpkg runtime bin and from the
-  local core install bin.
-- Presets/textures are required for a complete user experience; package them with
-  the EXE.
+Use repo-local dependency paths so builds are reproducible and do not rely on ad-hoc folders under Downloads.
 
-## Paths Used By This Workflow
+- Keep vcpkg inside the repo at: C:/Source/projectm/.deps/vcpkg
+- Keep build trees inside repo (build-copilot-vs-merged, frontend-sdl-cpp/build-merged)
+- Keep runtime dependency discovery from frontend-sdl-cpp/build-merged/vcpkg_installed/x64-windows/bin
 
-- Repo root:
-  `C:/Source/projectm`
-- Core build dir:
-  `C:/Source/projectm/build-copilot-vs-merged`
-- Core install dir:
-  `C:/Users/diegobaccino/Downloads/projectm-local-install-merged`
-- Frontend build dir:
-  `C:/Source/projectm/frontend-sdl-cpp/build-merged`
-- Frontend install dir (optional):
-  `C:/Users/diegobaccino/Downloads/projectm-standalone-install-merged`
-- Portable output folder:
-  `C:/Users/diegobaccino/Downloads/projectm-standalone-portable-merged-latest`
-- Portable zip:
-  `C:/Users/diegobaccino/Downloads/projectm-standalone-portable-merged-latest.zip`
+Note: this repo already contains source-side vendor dependencies under vendor and frontend-sdl-cpp/vendor.
 
-## 1) Configure + Build + Install Core (libprojectM)
+## One-time Setup
+
+```powershell
+# 1) Repo-local vcpkg checkout
+if (!(Test-Path C:/Source/projectm/.deps/vcpkg)) {
+  git clone https://github.com/microsoft/vcpkg C:/Source/projectm/.deps/vcpkg
+}
+
+# 2) Bootstrap vcpkg
+& 'C:/Source/projectm/.deps/vcpkg/bootstrap-vcpkg.bat'
+```
+
+## Preflight (Avoid Stale vcpkg Lock)
+
+Run this before configure if a previous build was interrupted:
+
+```powershell
+Get-Process vcpkg,cmake,cl -ErrorAction SilentlyContinue | Stop-Process -Force
+
+$locks = @(
+  'C:/Source/projectm/build-copilot-vs-merged/vcpkg_installed/vcpkg/vcpkg-running.lock',
+  'C:/Source/projectm/frontend-sdl-cpp/build-merged/vcpkg_installed/vcpkg/vcpkg-running.lock'
+)
+foreach ($lock in $locks) {
+  if (Test-Path $lock) { Remove-Item -Force $lock }
+}
+```
+
+## Tool Paths
 
 ```powershell
 $cm = 'C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe'
+$toolchain = 'C:/Source/projectm/.deps/vcpkg/scripts/buildsystems/vcpkg.cmake'
+```
 
+## 1) Configure + Build + Install Core
+
+```powershell
 & $cm -S C:/Source/projectm -B C:/Source/projectm/build-copilot-vs-merged `
   -G 'Visual Studio 17 2022' -A x64 `
-  -DCMAKE_INSTALL_PREFIX=C:/Users/diegobaccino/Downloads/projectm-local-install-merged `
-  -DCMAKE_TOOLCHAIN_FILE=C:/Users/diegobaccino/Downloads/vcpkg/scripts/buildsystems/vcpkg.cmake `
+  -DCMAKE_INSTALL_PREFIX=C:/Source/projectm/.local/install-core `
+  -DCMAKE_TOOLCHAIN_FILE=$toolchain `
   -DVCPKG_TARGET_TRIPLET=x64-windows `
   -DBUILD_TESTING=OFF
 
 & $cm --build C:/Source/projectm/build-copilot-vs-merged --config Release --target INSTALL --parallel
 ```
 
-Expected key outputs:
+Expected outputs:
 
-- `C:/Users/diegobaccino/Downloads/projectm-local-install-merged/bin/projectM-4.dll`
-- `C:/Users/diegobaccino/Downloads/projectm-local-install-merged/bin/projectM-4-playlist.dll`
-- `C:/Users/diegobaccino/Downloads/projectm-local-install-merged/include/projectM-4/logo_overlay.h`
+- C:/Source/projectm/.local/install-core/bin/projectM-4.dll
+- C:/Source/projectm/.local/install-core/bin/projectM-4-playlist.dll
 
-## 2) Configure + Build Frontend (projectMSDL)
+## 2) Configure + Build Frontend
 
 ```powershell
-$cm = 'C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe'
-
 & $cm -S C:/Source/projectm/frontend-sdl-cpp -B C:/Source/projectm/frontend-sdl-cpp/build-merged `
   -G 'Visual Studio 17 2022' -A x64 `
   -DCMAKE_BUILD_TYPE=Release `
-  -DCMAKE_INSTALL_PREFIX=C:/Users/diegobaccino/Downloads/projectm-standalone-install-merged `
-  -DCMAKE_TOOLCHAIN_FILE=C:/Users/diegobaccino/Downloads/vcpkg/scripts/buildsystems/vcpkg.cmake `
+  -DCMAKE_INSTALL_PREFIX=C:/Source/projectm/.local/install-frontend `
+  -DCMAKE_TOOLCHAIN_FILE=$toolchain `
   -DVCPKG_TARGET_TRIPLET=x64-windows `
-  -DCMAKE_PREFIX_PATH=C:/Users/diegobaccino/Downloads/projectm-local-install-merged `
-  -DprojectM4_DIR=C:/Users/diegobaccino/Downloads/projectm-local-install-merged/lib/cmake/projectM4
+  -DCMAKE_PREFIX_PATH=C:/Source/projectm/.local/install-core `
+  -DprojectM4_DIR=C:/Source/projectm/.local/install-core/lib/cmake/projectM4
 
 & $cm --build C:/Source/projectm/frontend-sdl-cpp/build-merged --config Release --parallel
 ```
 
 Expected output:
 
-- `C:/Source/projectm/frontend-sdl-cpp/build-merged/src/Release/projectMSDL.exe`
+- C:/Source/projectm/frontend-sdl-cpp/build-merged/src/Release/projectMSDL.exe
 
-## 3) Assemble Portable Folder
+## 3) Assemble Portable Folder (Requested Location)
 
 ```powershell
-$portable = 'C:/Users/diegobaccino/Downloads/projectm-standalone-portable-merged-latest'
+$portable = 'C:/Users/diegobaccino/Downloads/ProjectMPortable'
 if (Test-Path $portable) { Remove-Item -Recurse -Force $portable }
 New-Item -ItemType Directory -Path $portable | Out-Null
 
 # EXE
 Copy-Item C:/Source/projectm/frontend-sdl-cpp/build-merged/src/Release/projectMSDL.exe $portable
 
-# Runtime DLLs from frontend vcpkg and local core install
+# Runtime DLLs from frontend build + core install
 Copy-Item C:/Source/projectm/frontend-sdl-cpp/build-merged/vcpkg_installed/x64-windows/bin/*.dll $portable -Force
-Copy-Item C:/Users/diegobaccino/Downloads/projectm-local-install-merged/bin/*.dll $portable -Force
+Copy-Item C:/Source/projectm/.local/install-core/bin/*.dll $portable -Force
 
-# Assets (presets/textures)
-# Preferred: copy from your latest known-good portable bundle that already has the full collection.
-$assetSource = (Get-ChildItem C:/Users/diegobaccino/Downloads -Directory |
-  Where-Object {
-    $_.Name -like 'projectm-standalone-portable*' -and
-    (Test-Path (Join-Path $_.FullName 'presets')) -and
-    $_.Name -ne 'projectm-standalone-portable-merged-latest'
-  } |
-  Sort-Object LastWriteTime -Descending |
-  Select-Object -First 1).FullName
-
-if ($assetSource) {
-  Copy-Item (Join-Path $assetSource 'presets') (Join-Path $portable 'presets') -Recurse -Force
-  if (Test-Path (Join-Path $assetSource 'textures')) {
-    Copy-Item (Join-Path $assetSource 'textures') (Join-Path $portable 'textures') -Recurse -Force
-  }
-}
-
-# Zip output
-$zip = 'C:/Users/diegobaccino/Downloads/projectm-standalone-portable-merged-latest.zip'
-if (Test-Path $zip) { Remove-Item $zip -Force }
-Compress-Archive -Path (Join-Path $portable '*') -DestinationPath $zip
+# Presets from repo
+Copy-Item C:/Source/projectm/presets (Join-Path $portable 'presets') -Recurse -Force
 ```
 
 ## 4) Validate Portable Contents
 
 ```powershell
-$portable = 'C:/Users/diegobaccino/Downloads/projectm-standalone-portable-merged-latest'
-
+$portable = 'C:/Users/diegobaccino/Downloads/ProjectMPortable'
 "exeExists=$((Test-Path (Join-Path $portable 'projectMSDL.exe')))"
-"dllCount=$((Get-ChildItem $portable -Filter *.dll).Count)"
+"dllCount=$((Get-ChildItem $portable -Filter *.dll -ErrorAction SilentlyContinue).Count)"
 "presetCount=$((Get-ChildItem (Join-Path $portable 'presets') -Recurse -File -ErrorAction SilentlyContinue).Count)"
-"textureCount=$((Get-ChildItem (Join-Path $portable 'textures') -Recurse -File -ErrorAction SilentlyContinue).Count)"
 ```
 
-Current known-good reference numbers from the last successful run:
+## Build Notes from Recent Run
 
-- DLL count: 21
-- Preset files: 621
-- Texture files: 96
+- Long first-time frontend configure is expected while vcpkg builds Poco/SDL2 and related dependencies.
+- If configure appears stalled, check for vcpkg lock files and leftover vcpkg/cmake processes.
+- Prefer Visual Studio generator over Ninja unless Ninja is explicitly installed and available.
 
-## 5) Quick Troubleshooting
+## Logo Overlay Defaults in Current Code
 
-- `CMake was unable to find a build program corresponding to Ninja`
-  - Use Visual Studio generator:
-    `-G 'Visual Studio 17 2022' -A x64`
-- Overlay tab/logo upload missing in app
-  - Check frontend files in `frontend-sdl-cpp/src/gui/` for your UI changes.
-  - Core API presence alone does not create frontend settings controls.
-- App starts but no presets/blank visuals
-  - Ensure `presets/` and `textures/` are next to `projectMSDL.exe` in portable folder.
-- Missing DLL errors on launch
-  - Re-copy all DLLs from both runtime sources listed in Step 3.
+Current defaults have been aligned to:
 
-## 6) Recommended Workflow After Future Changes
+- Anchor: Center
+- Offset X: 0
+- Offset Y: 0
 
-1. Commit your core and frontend updates in this unified repo.
-2. Re-run Steps 1 to 4.
-3. Replace `projectm-standalone-portable-merged-latest.zip` for distribution.
+Settings are also now auto-persisted when the settings window is closed with unsaved changes.

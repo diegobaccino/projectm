@@ -1,0 +1,1 @@
+C:\Source\projectm\build-copilot-vs-merged\src\libprojectM\Audio\Audio.dir\Release\Audio.lib

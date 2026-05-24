@@ -23,32 +23,34 @@ SettingsWindow::SettingsWindow(ProjectMGUI& gui)
     , _userConfiguration(ProjectMSDLApplication::instance().UserConfiguration())
     , _commandLineConfiguration(ProjectMSDLApplication::instance().CommandLineConfiguration())
 {
-    // Load persisted logo state so the UI reflects saved config
-    _logoPath = _userConfiguration->getString("logo.path", "");
-    if (!_logoPath.empty())
-    {
-        _logoLoaded = true; // Actual image load happens in RenderLoop::LoadPersistedLogoConfig
-        _logoEnabled = _userConfiguration->getBool("logo.enabled", true);
-        _logoOpacity = static_cast<float>(_userConfiguration->getDouble("logo.opacity", 0.8));
-        _logoScale = static_cast<float>(_userConfiguration->getDouble("logo.scale", 0.15));
-        _logoRotation = static_cast<float>(_userConfiguration->getDouble("logo.rotation", 0.0));
-        _logoAnchor = _userConfiguration->getInt("logo.anchor", 8);
-        _logoOffsetX = static_cast<float>(_userConfiguration->getDouble("logo.offsetX", -20.0));
-        _logoOffsetY = static_cast<float>(_userConfiguration->getDouble("logo.offsetY", -20.0));
-        _logoReactiveEffect = _userConfiguration->getInt("logo.reactiveEffect", 0);
-        _logoReactiveSensitivity = static_cast<float>(_userConfiguration->getDouble("logo.reactiveSensitivity", 0.5));
-        _logoMotionEffect = _userConfiguration->getInt("logo.motionEffect", 0);
-        _logoMotionSpeed = static_cast<float>(_userConfiguration->getDouble("logo.motionSpeed", 4.0));
-        _logoRandomReactive = _userConfiguration->getBool("logo.randomReactive", false);
-        _logoRandomMotion = _userConfiguration->getBool("logo.randomMotion", false);
-        _logoRandomInterval = static_cast<float>(_userConfiguration->getDouble("logo.randomInterval", 15.0));
-    }
+    ReloadLogoStateFromConfig();
 }
 
 void SettingsWindow::Show()
 {
+    ReloadLogoStateFromConfig();
     _userScale = static_cast<float>(_userConfiguration->getDouble("window.uiScale", 1.0));
     _visible = true;
+}
+
+void SettingsWindow::ReloadLogoStateFromConfig()
+{
+    _logoPath = _userConfiguration->getString("logo.path", "");
+    _logoLoaded = !_logoPath.empty();
+    _logoEnabled = _userConfiguration->getBool("logo.enabled", true);
+    _logoOpacity = static_cast<float>(_userConfiguration->getDouble("logo.opacity", 0.8));
+    _logoScale = static_cast<float>(_userConfiguration->getDouble("logo.scale", 0.15));
+    _logoRotation = static_cast<float>(_userConfiguration->getDouble("logo.rotation", 0.0));
+    _logoAnchor = _userConfiguration->getInt("logo.anchor", 4);
+    _logoOffsetX = static_cast<float>(_userConfiguration->getDouble("logo.offsetX", 0.0));
+    _logoOffsetY = static_cast<float>(_userConfiguration->getDouble("logo.offsetY", 0.0));
+    _logoReactiveEffect = _userConfiguration->getInt("logo.reactiveEffect", 0);
+    _logoReactiveSensitivity = static_cast<float>(_userConfiguration->getDouble("logo.reactiveSensitivity", 0.5));
+    _logoMotionEffect = _userConfiguration->getInt("logo.motionEffect", 0);
+    _logoMotionSpeed = static_cast<float>(_userConfiguration->getDouble("logo.motionSpeed", 4.0));
+    _logoRandomReactive = _userConfiguration->getBool("logo.randomReactive", false);
+    _logoRandomMotion = _userConfiguration->getBool("logo.randomMotion", false);
+    _logoRandomInterval = static_cast<float>(_userConfiguration->getDouble("logo.randomInterval", 15.0));
 }
 
 void SettingsWindow::Draw()
@@ -57,6 +59,8 @@ void SettingsWindow::Draw()
     {
         return;
     }
+
+    const bool wasVisible = _visible;
 
     constexpr ImGuiWindowFlags windowFlags = ImGuiWindowFlags_NoCollapse;
     constexpr ImGuiTabBarFlags tabBarFlags = ImGuiTabBarFlags_None;
@@ -136,6 +140,11 @@ void SettingsWindow::Draw()
                     new DisplayToastNotification("Failed to load logo image!"));
             }
         }
+    }
+
+    if (wasVisible && !_visible && _changed)
+    {
+        PersistSettings(false);
     }
 }
 
@@ -612,45 +621,52 @@ void SettingsWindow::SaveButton()
 {
     if (ImGui::Button("Save Settings"))
     {
-        try
-        {
-            // Persist logo settings into user configuration
-            _userConfiguration->setString("logo.path", _logoPath);
-            _userConfiguration->setBool("logo.enabled", _logoEnabled);
-            _userConfiguration->setDouble("logo.opacity", _logoOpacity);
-            _userConfiguration->setDouble("logo.scale", _logoScale);
-            _userConfiguration->setDouble("logo.rotation", _logoRotation);
-            _userConfiguration->setInt("logo.anchor", _logoAnchor);
-            _userConfiguration->setDouble("logo.offsetX", _logoOffsetX);
-            _userConfiguration->setDouble("logo.offsetY", _logoOffsetY);
-            _userConfiguration->setInt("logo.reactiveEffect", _logoReactiveEffect);
-            _userConfiguration->setDouble("logo.reactiveSensitivity", _logoReactiveSensitivity);
-            _userConfiguration->setInt("logo.motionEffect", _logoMotionEffect);
-            _userConfiguration->setDouble("logo.motionSpeed", _logoMotionSpeed);
-            _userConfiguration->setBool("logo.randomReactive", _logoRandomReactive);
-            _userConfiguration->setBool("logo.randomMotion", _logoRandomMotion);
-            _userConfiguration->setDouble("logo.randomInterval", _logoRandomInterval);
+        PersistSettings(true);
+    }
+}
 
-            auto configFile = _commandLineConfiguration->getString("app.UserConfigurationFile", "");
-            if (!configFile.empty())
-            {
-                _userConfiguration->save(configFile);
-                Poco::NotificationCenter::defaultCenter().postNotification(
-                    new DisplayToastNotification("Settings saved!"));
-            }
-            else
-            {
-                Poco::NotificationCenter::defaultCenter().postNotification(
-                    new DisplayToastNotification("Error saving settings"));
-            }
-        }
-        catch (...)
+bool SettingsWindow::PersistSettings(bool notifySuccess)
+{
+    try
+    {
+        _userConfiguration->setString("logo.path", _logoPath);
+        _userConfiguration->setBool("logo.enabled", _logoEnabled);
+        _userConfiguration->setDouble("logo.opacity", _logoOpacity);
+        _userConfiguration->setDouble("logo.scale", _logoScale);
+        _userConfiguration->setDouble("logo.rotation", _logoRotation);
+        _userConfiguration->setInt("logo.anchor", _logoAnchor);
+        _userConfiguration->setDouble("logo.offsetX", _logoOffsetX);
+        _userConfiguration->setDouble("logo.offsetY", _logoOffsetY);
+        _userConfiguration->setInt("logo.reactiveEffect", _logoReactiveEffect);
+        _userConfiguration->setDouble("logo.reactiveSensitivity", _logoReactiveSensitivity);
+        _userConfiguration->setInt("logo.motionEffect", _logoMotionEffect);
+        _userConfiguration->setDouble("logo.motionSpeed", _logoMotionSpeed);
+        _userConfiguration->setBool("logo.randomReactive", _logoRandomReactive);
+        _userConfiguration->setBool("logo.randomMotion", _logoRandomMotion);
+        _userConfiguration->setDouble("logo.randomInterval", _logoRandomInterval);
+
+        auto configFile = _commandLineConfiguration->getString("app.UserConfigurationFile", "");
+        if (configFile.empty())
         {
             Poco::NotificationCenter::defaultCenter().postNotification(
                 new DisplayToastNotification("Error saving settings"));
+            return false;
         }
 
+        _userConfiguration->save(configFile);
+        if (notifySuccess)
+        {
+            Poco::NotificationCenter::defaultCenter().postNotification(
+                new DisplayToastNotification("Settings saved!"));
+        }
         _changed = false;
+        return true;
+    }
+    catch (...)
+    {
+        Poco::NotificationCenter::defaultCenter().postNotification(
+            new DisplayToastNotification("Error saving settings"));
+        return false;
     }
 }
 
